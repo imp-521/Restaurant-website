@@ -1,21 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant-website</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/78631ec534.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+  </head>
+  <body class="bg-[#fafefd]" style="font-family: 'Vazir', sans-serif">
     <header>
-       <nav>
-          <div class="text-">
-
-          </div>
-       </nav>
+      <nav
+        class="p-7 container mx-auto w-[80%] flex item-center justify-between"
+      >
+        <div>
+          <p
+            class="text-gray-600 text-lg cursor-pointer hover:text-[#00ab5a] transition-colors duration-150"
+          >
+            قابلمه
+          </p>
+        </div>
+        <div class="flex items-center">
+          <ul class="flex gap-15 flex-row-reverse">
+            <li
+              class="text-lg text-gray-600 cursor-pointer hover:text-[#00ab5a] transition-colors duration-150"
+            >
+              خانه
+            </li>
+            <li
+              class="text-lg text-gray-600 cursor-pointer hover:text-[#00ab5a] transition-colors duration-150"
+            >
+              درباره
+            </li>
+            <li
+              class="text-lg text-gray-600 cursor-pointer hover:text-[#00ab5a] transition-colors duration-150"
+            >
+              خدمات
+            </li>
+            <li
+              class="text-lg text-gray-600 cursor-pointer hover:text-[#00ab5a] transition-colors duration-150"
+            >
+              منو
+            </li>
+            <li
+              class="text-lg text-gray-600 cursor-pointer hover:text-[#00ab5a] transition-colors duration-150"
+            >
+              تماس با ما
+            </li>
+          </ul>
+          <i class="fa-regular fa-sun ml-5 text-gray-600 cursor-pointer"></i>
+        </div>
+      </nav>
     </header>
-    <section>
-
+    <!-- MAIN SECTION -->
+    <section id="main" class="container mx-auto w-[80%]">
+      <div class="h-138 flex">
+        <div class="flex items-center justify-center w-[50%] h-[100%]">
+          <img src="img/home.png" alt="" class="w-115 h-115"/>
+        </div>
+        <div dir="rtl" class=" w-[50%] h-[100%] flex items-right justify-center gap-7 flex-col text-right">
+            <h1 class="text-[#00ab5a] text-5xl font-semibold">از طعم ها لذت ببرید</h1>
+            <p class="leading-normal font-medium text-3xl">هر روز یک قابلــمه پر از شــادی و <br>خوشمزگی در انتظار شماست.</p>
+            <button class="bg-[#00ab5a] w-36 px-8 py-4 rounded-xl text-white font-medium hover:bg-[#00994f] transition-colors duration-200 cursor-pointer">مشاهده منو</button>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
