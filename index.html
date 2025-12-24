@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Restaurant-website</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css"
       rel="stylesheet"
@@ -12,64 +12,54 @@
       src="https://kit.fontawesome.com/78631ec534.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Restaurant Food</title>
   </head>
-  <body class="bg-[#fafefd]" style="font-family: 'Vazir', sans-serif">
-    <header>
-      <nav
-        class="p-7 container mx-auto w-[80%] flex item-center justify-between"
-      >
-        <div>
-          <p
-            class="text-gray-600 text-lg cursor-pointer hover:text-[#00ab5a] transition-colors duration-150"
-          >
-            قابلمه
-          </p>
-        </div>
-        <div class="flex items-center">
-          <ul class="flex gap-15 flex-row-reverse">
-            <li
-              class="text-lg text-gray-600 cursor-pointer hover:text-[#00ab5a] transition-colors duration-150"
-            >
-              خانه
-            </li>
-            <li
-              class="text-lg text-gray-600 cursor-pointer hover:text-[#00ab5a] transition-colors duration-150"
-            >
-              درباره
-            </li>
-            <li
-              class="text-lg text-gray-600 cursor-pointer hover:text-[#00ab5a] transition-colors duration-150"
-            >
-              خدمات
-            </li>
-            <li
-              class="text-lg text-gray-600 cursor-pointer hover:text-[#00ab5a] transition-colors duration-150"
-            >
-              منو
-            </li>
-            <li
-              class="text-lg text-gray-600 cursor-pointer hover:text-[#00ab5a] transition-colors duration-150"
-            >
-              تماس با ما
-            </li>
-          </ul>
-          <i class="fa-regular fa-sun ml-5 text-gray-600 cursor-pointer"></i>
-        </div>
+  <body class="font-[Vazir] bg-[#fafefd]">
+    <!-- HEADER SECTION -->
+    <header id="navbar" class="w-full h-13 sm:h-14 px-4 lg:px-40 fixed bg-[#fafefd] z-50 transition-shadow duration-200">
+      <nav class="w-full h-full flex items-center justify-between">
+        <span class="text-gray-600 text-base sm:text-lg">قابلمه </span>
+        <i id="bars" class="fa-solid fa-bars text-gray-600 text-base sm:text-lg lg:hidden"></i>
       </nav>
     </header>
     <!-- MAIN SECTION -->
-    <section id="main" class="container mx-auto w-[80%]">
-      <div class="h-138 flex">
-        <div class="flex items-center justify-center w-[50%] h-[100%]">
-          <img src="img/home.png" alt="" class="w-115 h-115"/>
+    <section>
+      <div class="w-full h-[580px] pt-14 relative flex flex-col sm:flex-row sm:justify-center sm:items-center gap-8 sm:gap-4 lg:px-40">
+        <div
+          class="w-full h-[50%] flex items-start justify-center flex-col text-right px-4 lg:px-0 gap-5 sm:gap-7"
+        >
+          <h1 class="text-[#00ab5a] font-bold text-2xl sm:text-3xl">از طعم ها لذت ببرید</h1>
+          <p class="text-base sm:text-2xl font-medium sm:font-semibold">
+            هر روز یک قابلمه پر از شادی و خوشمزگی
+            در انتظار شماست.
+          </p>
+          <button class="px-6 py-4 sm:px-8 sm:py-4 bg-[#00ab5a] hover:bg-green-700 text-white duration-300 rounded-lg text-white font-normal sm:font-medium cursor-pointer text-sm">
+            مشاهده منو
+          </button>
         </div>
-        <div dir="rtl" class=" w-[50%] h-[100%] flex items-right justify-center gap-7 flex-col text-right">
-            <h1 class="text-[#00ab5a] text-5xl font-semibold">از طعم ها لذت ببرید</h1>
-            <p class="leading-normal font-medium text-3xl">هر روز یک قابلــمه پر از شــادی و <br>خوشمزگی در انتظار شماست.</p>
-            <button class="bg-[#00ab5a] w-36 px-8 py-4 rounded-xl text-white font-medium hover:bg-[#00994f] transition-colors duration-200 cursor-pointer">مشاهده منو</button>
+        <div class="w-full h-[50%] flex items-center justify-center">
+          <img class="px-4 py-4 w-80 h-80 sm:w-80 sm:h-80" src="img/home.png" alt="" />
         </div>
       </div>
+      <div
+        id="menuMobile"
+        class="fixed top-0  right-0 left-0 bg-[#fafefd] h-60 flex items-center justify-center rounded-b-xl shadow-md z-50 -translate-y-full opacity-0 transition-all duration-500 ease-in-out"
+      >
+        <ul class="flex flex-col gap-4 items-center">
+          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">خانه</li>
+          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">درباره</li>
+          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">خدمات</li>
+          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">منو</li>
+          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">تماس با ما</li>
+          <li>
+            <i
+              class="fa-regular fa-sun absolute left-4 top-6 sm:top-3 text-gray-600 text-base sm:text-lg"
+            ></i>
+          </li>
+        </ul>
+      </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
