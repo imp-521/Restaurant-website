@@ -17,47 +17,141 @@
   </head>
   <body class="font-[Vazir] bg-[#fafefd]">
     <!-- HEADER SECTION -->
-    <header id="navbar" class="w-full h-13 sm:h-14 px-4 lg:px-40 fixed bg-[#fafefd] z-50 transition-shadow duration-200">
+    <header
+      id="navbar"
+      class="w-full h-13 sm:h-14 px-4 lg:px-40 fixed bg-[#fafefd] z-50 transition-shadow duration-200 lg:h-20"
+    >
       <nav class="w-full h-full flex items-center justify-between">
-        <span class="text-gray-600 text-base sm:text-lg">قابلمه </span>
-        <i id="bars" class="fa-solid fa-bars text-gray-600 text-base sm:text-lg lg:hidden"></i>
+        <span
+          class="text-gray-600 text-base sm:text-lg lg:text-xl hover:text-[#00ab5a] transition-all duration-150 cursor-pointer"
+          >قابلمه
+        </span>
+        <div class="lg:flex items-center gap-6 hidden lg:block justify-center">
+          <ul class="flex gap-10">
+            <li
+              class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
+            >
+              خانه
+            </li>
+            <li
+              class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
+            >
+              درباره
+            </li>
+            <li
+              class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
+            >
+              خدمات
+            </li>
+            <li
+              class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
+            >
+              منو
+            </li>
+            <li
+              class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
+            >
+              تماس با ما
+            </li>
+          </ul>
+          <i class="fa-solid fa-sun text-gray-600 cursor-pointer"></i>
+        </div>
+        <div class="lg:hidden">
+          <i
+            id="bars"
+            class="fa-solid fa-bars text-gray-600 text-base sm:text-lg"
+          ></i>
+        </div>
       </nav>
     </header>
     <!-- MAIN SECTION -->
     <section>
-      <div class="w-full h-[580px] pt-14 relative flex flex-col sm:flex-row sm:justify-center sm:items-center gap-8 sm:gap-4 lg:px-40">
+      <div
+        class="w-full h-[580px] lg:h-150 sm:h-120 pt-14 relative flex flex-col sm:flex-row sm:justify-center sm:items-center gap-8 sm:gap-4 lg:px-40"
+      >
         <div
-          class="w-full h-[50%] flex items-start justify-center flex-col text-right px-4 lg:px-0 gap-5 sm:gap-7"
+          class="w-full h-[50%] flex items-start justify-center flex-col text-right px-4 lg:px-0 gap-5 sm:gap-7 lg:gap-8"
         >
-          <h1 class="text-[#00ab5a] font-bold text-2xl sm:text-3xl">از طعم ها لذت ببرید</h1>
-          <p class="text-base sm:text-2xl font-medium sm:font-semibold">
-            هر روز یک قابلمه پر از شادی و خوشمزگی
-            در انتظار شماست.
+          <h1 class="text-[#00ab5a] font-bold text-2xl sm:text-3xl lg:text-5xl">
+            از طعم ها لذت ببرید
+          </h1>
+          <p
+            class="text-base sm:text-2xl font-semibold sm:font-semibold lg:text-3xl"
+          >
+            هر روز یک قابلمه پر از شادی و خوشمزگی در انتظار شماست.
           </p>
-          <button class="px-6 py-4 sm:px-8 sm:py-4 bg-[#00ab5a] hover:bg-green-700 text-white duration-300 rounded-lg text-white font-normal sm:font-medium cursor-pointer text-sm">
+          <button
+            class="px-6 py-3 sm:px-6 sm:py-3 bg-[#00ab5a] hover:bg-green-700 text-white duration-300 rounded-lg text-white font-normal sm:font-medium cursor-pointer text-sm lg:text-lg sm:text-base lg:px-8 lg:py-4"
+          >
             مشاهده منو
           </button>
         </div>
         <div class="w-full h-[50%] flex items-center justify-center">
-          <img class="px-4 py-4 w-80 h-80 sm:w-80 sm:h-80" src="img/home.png" alt="" />
+          <img
+            class="px-4 py-4 w-80 h-80 sm:w-80 sm:h-80 lg:w-120 lg:h-120"
+            src="img/home.png"
+            alt=""
+          />
         </div>
       </div>
       <div
         id="menuMobile"
-        class="fixed top-0  right-0 left-0 bg-[#fafefd] h-60 flex items-center justify-center rounded-b-xl shadow-md z-50 -translate-y-full opacity-0 transition-all duration-500 ease-in-out"
+        class="fixed top-0 right-0 left-0 bg-[#fafefd] h-60 flex items-center justify-center rounded-b-xl shadow-md z-50 -translate-y-full opacity-0 transition-all duration-500 ease-in-out"
       >
         <ul class="flex flex-col gap-4 items-center">
-          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">خانه</li>
-          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">درباره</li>
-          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">خدمات</li>
+          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">
+            خانه
+          </li>
+          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">
+            درباره
+          </li>
+          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">
+            خدمات
+          </li>
           <li class="text-gray-600 cursor-pointer text-base sm:text-lg">منو</li>
-          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">تماس با ما</li>
+          <li class="text-gray-600 cursor-pointer text-base sm:text-lg">
+            تماس با ما
+          </li>
           <li>
             <i
               class="fa-regular fa-sun absolute left-4 top-6 sm:top-3 text-gray-600 text-base sm:text-lg"
             ></i>
           </li>
         </ul>
+      </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section class="mt-15 lg:mt-40">
+      <div
+        class="w-full h-170 sm:w-full gap-7 sm:h-80 flex items-center flex-col px-4 sm:flex-row-reverse sm:gap-7 lg:w-full lg:h-60 lg:px-40 lg:gap-30"
+      >
+        <div
+          class="h-[50%] sm:w-[50%] sm:h-full sm:h-full w-full flex items-center sm:items-start sm:items-right flex-col justify-center text-center gap-4 sm:gap-7 lg:gap-7 sm:text-right lg:w-[50%]"
+        >
+          <span class="text-[#00ab5a] font-semibold text-lg lg:text-2xl">درباره ما</span>
+          <h2 class="text-2xl font-semibold lg:text-3xl">
+            بهترین طعم‌ها، از قابلمه ما به سفره شما
+          </h2>
+          <p class="text-base lg:text-xl">
+            در رستوران ما، هر روز با عشق و دقت، غذاهایی تازه و خوشمزه آماده
+            می‌کنیم. ما باور داریم بهترین طعم‌ها از مواد باکیفیت و هنر آشپزی
+            واقعی ساخته می‌شوند. هدف ما ساده است: لبخند رضایت شما در هر لقمه.
+          </p>
+          <button
+            class="px-6 py-3 bg-[#00ab5a] text-white rounded-lg hover:bg-green-700 duration-300 sm:font-medium cursor-pointer lg:py-4 lg:px-8 lg:text-lg lg:font-semibold"
+          >
+            سفر به گذشته
+          </button>
+        </div>
+        <div
+          class="w-full h-[50%] sm:w-[50%] sm:h-full lg:w-[50%] lg:h-full sm:px-0 flex items-center justify-center lg:w-[50%]"
+        >
+          <img
+            class="rounded-xl w-full h-full sm:w-full object-cover lg:w-100 lg:h-100 lg:object-contain"
+            src="img/about.jpg"
+            alt=""
+          />
+        </div>
       </div>
     </section>
     <script src="script.js"></script>
