@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,37 +22,49 @@
       class="w-full h-13 sm:h-14 px-4 lg:px-40 fixed bg-[#fafefd] z-50 transition-shadow duration-200 lg:h-20"
     >
       <nav class="w-full h-full flex items-center justify-between">
-        <span
-          class="text-gray-600 text-base sm:text-lg lg:text-xl hover:text-[#00ab5a] transition-all duration-150 cursor-pointer"
-          >قابلمه
-        </span>
+        <a href="#main">
+          <span
+            class="text-gray-600 text-base sm:text-lg lg:text-xl hover:text-[#00ab5a] transition-all duration-150 cursor-pointer"
+            >قابلمه
+          </span>
+        </a>
         <div class="lg:flex items-center gap-6 hidden lg:block justify-center">
           <ul class="flex gap-10">
-            <li
-              class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
+            <a href="#main"
+              ><li
+                class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
+              >
+                خانه
+              </li></a
             >
-              خانه
-            </li>
-            <li
-              class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
-            >
-              درباره
-            </li>
-            <li
-              class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
-            >
-              خدمات
-            </li>
-            <li
-              class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
-            >
-              منو
-            </li>
-            <li
-              class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
-            >
-              تماس با ما
-            </li>
+            <a href="#about">
+              <li
+                class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
+              >
+                درباره
+              </li>
+            </a>
+            <a href="#service">
+              <li
+                class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
+              >
+                خدمات
+              </li>
+            </a>
+            <a href="#menu">
+              <li
+                class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
+              >
+                منو
+              </li>
+            </a>
+            <a href="#contact">
+              <li
+                class="text-gray-600 cursor-pointer text-base sm:text-lg hover:text-[#00ab5a] transition-all duration-150"
+              >
+                تماس با ما
+              </li>
+            </a>
           </ul>
           <i class="fa-solid fa-sun text-gray-600 cursor-pointer"></i>
         </div>
@@ -66,12 +78,12 @@
     </header>
     <main>
       <!-- MAIN SECTION -->
-      <section>
+      <section id="main">
         <div
           class="w-full h-[580px] lg:h-150 sm:h-120 pt-14 relative flex flex-col sm:flex-row sm:justify-center sm:items-center gap-8 sm:gap-4 lg:px-40"
         >
           <div
-            class="w-full h-[50%] flex items-start justify-center flex-col text-right px-4 lg:px-0 gap-5 sm:gap-7 lg:gap-8"
+            class="w-full h-[50%] flex items-start justify-center flex-col text-right px-4 lg:px-0 gap-5 sm:gap-7 lg:gap-8 reveal opacity-0 -translate-y-6 transition-all duration-2000"
           >
             <h1
               class="text-[#00ab5a] font-bold text-2xl sm:text-3xl lg:text-4xl"
@@ -91,7 +103,7 @@
           </div>
           <div class="w-full h-[50%] flex items-center justify-center">
             <img
-              class="px-4 py-4 w-80 h-80 sm:w-80 sm:h-80 lg:w-120 lg:h-120"
+              class="px-4 py-4 w-80 h-80 sm:w-80 sm:h-80 lg:w-120 lg:h-120 reveal opacity-0 -translate-y-6 transition-all duration-1000"
               src="img/home.png"
               alt=""
             />
@@ -102,36 +114,39 @@
           class="fixed top-0 right-0 left-0 bg-[#fafefd] h-60 flex items-center justify-center rounded-b-xl shadow-md z-50 -translate-y-full opacity-0 transition-all duration-500 ease-in-out"
         >
           <ul class="flex flex-col gap-4 items-center">
-            <li class="text-gray-600 cursor-pointer text-base sm:text-lg">
-              خانه
-            </li>
-            <li class="text-gray-600 cursor-pointer text-base sm:text-lg">
-              درباره
-            </li>
-            <li class="text-gray-600 cursor-pointer text-base sm:text-lg">
-              خدمات
-            </li>
-            <li class="text-gray-600 cursor-pointer text-base sm:text-lg">
-              منو
-            </li>
-            <li class="text-gray-600 cursor-pointer text-base sm:text-lg">
-              تماس با ما
+            <li>
+              <a href="#main" class="text-gray-600 text-base sm:text-lg"
+                >خانه</a
+              >
             </li>
             <li>
-              <i
-                class="fa-regular fa-sun absolute left-4 top-6 sm:top-3 text-gray-600 text-base sm:text-lg"
-              ></i>
+              <a href="#about" class="text-gray-600 text-base sm:text-lg"
+                >درباره</a
+              >
+            </li>
+            <li>
+              <a href="#service" class="text-gray-600 text-base sm:text-lg"
+                >خدمات</a
+              >
+            </li>
+            <li>
+              <a href="#menu" class="text-gray-600 text-base sm:text-lg">منو</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-gray-600 text-base sm:text-lg"
+                >تماس با ما</a
+              >
             </li>
           </ul>
         </div>
       </section>
       <!-- ABOUT SECTION -->
-      <section class="mt-15 lg:mt-40">
+      <section id="about" class="mt-15 lg:mt-40 scroll-mt-24 lg:scroll-mt-45">
         <div
           class="w-full h-170 sm:w-full gap-7 sm:h-80 flex items-center flex-col px-4 sm:flex-row-reverse sm:gap-7 lg:w-full lg:h-60 lg:px-40 lg:gap-10"
         >
           <div
-            class="h-[50%] sm:w-[50%] sm:h-full sm:h-full w-full flex items-center sm:items-start sm:items-right flex-col justify-center text-center gap-4 sm:gap-7 lg:gap-7 sm:text-right lg:w-[50%]"
+            class="h-[50%] sm:w-[50%] sm:h-full sm:h-full w-full flex items-center sm:items-start sm:items-right flex-col justify-center text-center gap-4 sm:gap-7 lg:gap-7 sm:text-right lg:w-[50%] reveal opacity-0 -translate-y-6 transition-all duration-2000"
           >
             <span class="text-[#00ab5a] font-semibold text-lg lg:text-2xl"
               >درباره ما</span
@@ -151,7 +166,7 @@
             </button>
           </div>
           <div
-            class="w-full h-[50%] sm:w-[50%] sm:h-full lg:w-[50%] lg:h-full sm:px-0 flex items-center justify-center lg:w-[50%]"
+            class="w-full h-[50%] sm:w-[50%] sm:h-full lg:w-[50%] lg:h-full sm:px-0 flex items-center justify-center lg:w-[50%] reveal opacity-0 -translate-y-6 transition-all duration-1000"
           >
             <img
               class="rounded-xl w-full h-full sm:w-full object-cover lg:w-100 lg:h-100 lg:object-contain"
@@ -162,7 +177,7 @@
         </div>
       </section>
       <!-- SERVICE SECTION -->
-      <section class="mt-15 sm:mt-30 lg:mt-50">
+      <section id="service" class="mt-15 sm:mt-30 lg:mt-50 scroll-mt-24 lg:scroll-mt-32">
         <div
           class="h-auto px-4 flex items-center justify-center gap-8 flex-col lg:w-full lg:px-40 lg:gap-15"
         >
@@ -178,7 +193,7 @@
             class="h-[80%] flex items-center justify-center flex-col sm:flex-row gap-8 px-7"
           >
             <div
-              class="flex flex-col items-center justify-center gap-4 flex-col"
+              class="flex flex-col items-center justify-center gap-4 flex-col reveal opacity-0 -translate-y-6 transition-all duration-3000"
             >
               <svg
                 class="w-16 h-16 lg:w-18 lg:h-18"
@@ -281,7 +296,7 @@
                 مشتریانمان ارائه می‌دهیم.
               </p>
             </div>
-            <div class="flex items-center justify-center flex-col gap-4">
+            <div class="flex items-center justify-center flex-col gap-4 reveal opacity-0 -translate-y-6 transition-all duration-2000">
               <svg
                 class="w-16 h-16 lg:w-18 lg:h-18"
                 viewBox="0 0 64 64"
@@ -490,7 +505,7 @@
                 تجربه کنید.
               </p>
             </div>
-            <div class="flex items-center justify-center flex-col gap-4">
+            <div class="flex items-center justify-center flex-col gap-4 reveal opacity-0 -translate-y-6 transition-all duration-1000">
               <svg
                 viewBox="0 0 64 64"
                 class="h-16 w-16 lg:w-18 lg:h-18"
@@ -578,7 +593,7 @@
         </div>
       </section>
       <!-- MENU SECTION -->
-      <section class="mt-15 lg:mt-40">
+      <section id="menu" class="mt-15 lg:mt-40 scroll-mt-16 lg:scroll-mt-32">
         <div
           class="w-full h-180 md:h-100 flex items-center justify-center flex-col px-4 lg:px-70"
         >
@@ -596,7 +611,7 @@
             class="h-[80%] w-full flex flex-wrap md:justify-between gap-4 md:flex-row lg:pt-5"
           >
             <div
-              class="w-[47%] h-65 md:w-[30%] lg:w-[27%] lg:h-70 flex items-center justify-center gap-2 flex-col shadow-xl bg-white relative rounded-xl"
+              class="w-[47%] h-65 md:w-[30%] lg:w-[27%] lg:h-70 flex items-center justify-center gap-2 flex-col shadow-xl bg-white relative rounded-xl reveal opacity-0 -translate-y-6 transition-all duration-2000"
             >
               <img
                 class="w-25 h-25 sm:w-26 sm:h-26 lg:w-33 lg:h-33"
@@ -617,7 +632,7 @@
               </div>
             </div>
             <div
-              class="w-[47%] h-65 md:w-[30%] flex items-center justify-center flex-col gap-2 shadow-xl bg-white relative rounded-xl lg:w-[27%] lg:h-70"
+              class="w-[47%] h-65 md:w-[30%] flex items-center justify-center flex-col gap-2 shadow-xl bg-white relative rounded-xl lg:w-[27%] lg:h-70 reveal opacity-0 -translate-y-6 transition-all duration-3000"
             >
               <img
                 class="w-25 h-25 sm:w-26 sm:h-26 lg:w-33 lg:h-33"
@@ -638,7 +653,7 @@
               </div>
             </div>
             <div
-              class="w-[47%] h-65 md:w-[30%] flex items-center justify-center flex-col gap-2 shadow-xl bg-white relative rounded-xl lg:w-[27%] lg:h-70"
+              class="w-[47%] h-65 md:w-[30%] flex items-center justify-center flex-col gap-2 shadow-xl bg-white relative rounded-xl lg:w-[27%] lg:h-70 reveal opacity-0 -translate-y-6 transition-all duration-3500"
             >
               <img
                 class="w-25 h-25 sm:w-26 sm:h-26 lg:w-33 lg:h-33"
@@ -662,17 +677,17 @@
         </div>
       </section>
       <!-- APP SECTION -->
-      <section class="mt-15 lg:mt-30">
+      <section class="mt-15 lg:mt-30 scroll-mt-24 lg:scroll-mt-32">
         <div
           class="px-4 w-full h-170 md:h-120 lg:h-140 lg:w-full lg:px-40 flex justify-cetner items-center flex-col md:flex-row"
         >
           <div
-            class="flex items-center md:items-start justify-center flex-col gap-1"
+            class="flex items-center md:items-start justify-center flex-col gap-1 reveal opacity-0 -translate-y-6 transition-all duration-2000"
           >
             <span class="text-lg font-semibold text-[#00ab5a] lg:text-2xl"
               >اپلیکیشن</span
             >
-            <h2 class="font-semibold text-2xl pt-2 lg:text-3xl">
+            <h2 class="font-semibold text-2xl pt-4 lg:text-3xl">
               اپلیکیشن در دسترس است
             </h2>
             <p
@@ -697,7 +712,7 @@
               />
             </div>
           </div>
-          <div class="w-full h-auto flex items-center justify-center pt-14">
+          <div class="w-full h-auto flex items-center justify-center pt-14 reveal opacity-0 -translate-y-6 transition-all duration-4000">
             <img
               class="w-60 h-auto md:w-full lg:h-140 lg:w-100"
               src="img/movil-app.png"
@@ -707,46 +722,81 @@
         </div>
       </section>
       <!-- CONTACT US SECTION -->
-      <section class="mt-8 mt-20 lg:mt-30">
+      <section id="contact" class="mt-8 mt-20 lg:mt-30 scroll-mt-20 md:scroll-mt-16  lg:scroll-mt-8">
         <div
           class="w-full h-70 md:h-90 flex items-center justify-center flex-col px-4 gap-3 md:items-start md:flex-row lg:w-full lg:px-40"
         >
-          <div class="w-full md:w-[70%] h-80 md:h-full flex justify-center items-center md:items-start flex-col">
-            <span class="text-[#00ab5a] font-semibold text-lg pb-2 lg:pb-3 lg:text-2xl">حرف بزنیم؟</span>
+          <div
+            class="w-full md:w-[70%] h-80 md:h-full flex justify-center items-center md:items-start flex-col"
+          >
+            <span
+              class="text-[#00ab5a] font-semibold text-lg pb-2 lg:pb-4 lg:text-2xl"
+              >حرف بزنیم؟</span
+            >
             <h2 class="font-semibold text-2xl lg:text-3xl">تماس با ما</h2>
-            <p class="text-center text-gray-600 pt-4 md:text-right lg:text-xl">
+            <p class="text-center text-gray-600 pt-4 md:text-right lg:text-lg">
               در صورت تمایل به رزرو میز در رستوران ما، با ما تماس حاصل فرمایید.
               تیم پشتیبانی ما از طریق چت آنلاین به صورت ۲۴ ساعته و در تمام
               روزهای هفته آماده خدمت‌رسانی سریع به شماست.
             </p>
           </div>
-          <div class="w-full md:w-[30%] h-20 md:h-full flex items-center justify-center">
+          <div
+            class="w-full md:w-[30%] h-20 md:h-full flex items-center justify-center"
+          >
             <button
-              class="px-9 py-3 md:px-11 md:py-4 bg-[#00ab5a] text-white rounded-lg hover:bg-green-700 duration-300 sm:font-medium cursor-pointer lg:py-4 lg:px-12 lg:text-lg font-bold"
+              class="px-9 py-3 md:px-11 md:py-4 bg-[#00ab5a] text-white rounded-lg hover:bg-green-700 duration-300 sm:font-medium cursor-pointer lg:py-4 lg:px-12 lg:text-lg font-bold lg:px-16 lg:py-4"
             >
               تماس حالا
             </button>
           </div>
         </div>
       </section>
-      <!-- <footer>
-        <div>
-           <div>
-              <span>قابلمه</span>
-              
-           </div>
-           <div>
-
-           </div>
-           <div>
-
-           </div>
-           <div>
-
-           </div>
+      <footer class="mt-15 lg:mt-30">
+        <div
+          class="flex flex-col w-full h-200 md:h-120 px-4 gap-4 md:flex-wrap md:flex-row lg:px-40 lg:gap-0 lg:h-60"
+        >
+          <div class="flex flex-col w-full h-1/6 gap-7 md:w-[31%] lg:w-1/4">
+            <div class="flex flex-col gap-2">
+              <h4 class="text-[#00ab5a] font-bold text-2xl md:text-2xl">
+                قابلمه
+              </h4>
+              <span class="text-gray-600 text-sm font-light">رستوران</span>
+            </div>
+            <div class="flex gap-4">
+              <i
+                class="fa-brands fa-facebook text-xl md:text-2xl cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-instagram text-xl md:text-2xl cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-whatsapp text-xl md:text-2xl cursor-pointer"
+              ></i>
+            </div>
+          </div>
+          <div class="flex flex-col w-full h-1/4 gap-3 md:w-[31%] lg:w-1/4">
+            <h4 class="font-bold text-2xl">خدمات</h4>
+            <span class="text-gray-600 cursor-pointer">کارت هدیه</span>
+            <span class="text-gray-600 cursor-pointer">سفارش آنلاین</span>
+            <span class="text-gray-600 cursor-pointer">منوی غذا</span>
+            <span class="text-gray-600 cursor-pointer">رزرو میز</span>
+          </div>
+          <div class="flex flex-col w-full h-1/4 gap-3 md:w-[31%] lg:w-1/4">
+            <h4 class="font-bold text-2xl">اطلاعات</h4>
+            <span class="text-gray-600 cursor-pointer">درباره ما</span>
+            <span class="text-gray-600 cursor-pointer">تماس با ما</span>
+            <span class="text-gray-600 cursor-pointer">ساغات کاری</span>
+            <span class="text-gray-600 cursor-pointer">سوالات متداول</span>
+          </div>
+          <div class="flex flex-col w-full h-1/4 gap-3 md:w-[31%] lg:w-1/4">
+            <h4 class="font-bold text-2xl">آدرس</h4>
+            <span class="text-gray-600">سروستان , شیراز</span>
+            <span class="text-gray-600">09377447164</span>
+            <span class="text-gray-600">sohrabiafshin6962@gmail.com</span>
+            <span class="text-gray-600">9:00 - 23:00</span>
+          </div>
         </div>
-        
-      </footer> -->
+      </footer>
     </main>
     <script src="script.js"></script>
   </body>
