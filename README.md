@@ -12,7 +12,7 @@ HTML5 Tailwind CSS JavaScript (ES6+) Font Awesome
 🔗 https://resonant-pothos-f0a146.netlify.app/
 
 ### Screenshots:
-### Home Page
+### Home Page:
 ![Home Page](./img/homeSection.png)
 
 ### About Section:
