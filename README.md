@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Restaurant Food Website:
 A modern and fully responsive restaurant landing page built with HTML, Tailwind CSS, and JavaScript.
 
@@ -12,13 +13,13 @@ HTML5 Tailwind CSS JavaScript (ES6+) Font Awesome
 
 ### Screenshots:
 ### Home Page
-![Home Page](./img/Screenshot from 2026-06-25 11-54-49.png)
+![Home Page](.img/homeSection.png)
 
 ### About Section
-![About Section](./img/Screenshot from 2026-06-25 11-55-10.png)
+![About Section](./img/aboutSection.png)
 
 ### Services Section
-![Services Section](./img/Screenshot from 2026-06-25 11-55-20.png)
+![Services Section](./img/serviceSection.png)
 
 ### Project Overview
 This project was built to practice responsive web design and improve my frontend development skills. The focus was on creating a modern restaurant website with smooth user interactions, mobile navigation, and scroll animations.
@@ -28,3 +29,15 @@ Building a responsive layout for different screen sizes. Creating a smooth mobil
 
 ### What I Learned
 Building responsive layouts with Tailwind CSS. Working with DOM manipulation and events. Using Intersection Observer API for animations. Writing clean and maintainable JavaScript code.
+=======
+## Screenshots
+
+### Home Page
+![Home Page](./img/homeSection.png)
+
+### About Section
+![About Section](./img/aboutSection.png)
+
+### Services Section
+![Services Section](./img/serviceSection.png)
+>>>>>>> 21c60f1 (UPDATE IMAGE)
